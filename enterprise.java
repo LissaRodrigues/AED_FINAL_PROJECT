@@ -7,3 +7,19 @@ package Business.Enterprise;
 
 import Business.Role.Role;
 import java.util.ArrayList;
+
+/**
+ *
+ * @author lissa
+ */
+public class Cirrhosis_Centre_Enterprise extends Enterprise {
+    
+    public Cirrhosis_Centre_Enterprise(String name){
+        super(name,EnterpriseType.BloodCancerCentre);
+    }
+    @Override
+    public ArrayList<Role> getSupportedRole() {
+        return null;
+    }
+    
+}
