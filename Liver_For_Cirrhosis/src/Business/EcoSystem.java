@@ -6,8 +6,17 @@ package Business;
 
 /**
  *
- * @author user
+ * @author cheril
  */
 public class EcoSystem {
+    private static EcoSystem business;
     
+    public UserAccountDirectory getUserAccountDirectory() {
+        if(this.userAccountDirectory == null) {
+            userAccountDirectory = new UserAccountDirectory();
+            Employee employee = this.getEmployeeDirectory().createEmployee("sysadmin");
+            UserAccount ua = this.userAccountDirectory.createUserAccount("sysadmin", "sysadmin", employee, new SystemAdminRole());
+
+        }
+        return this.userAccountDirectory;
 }
