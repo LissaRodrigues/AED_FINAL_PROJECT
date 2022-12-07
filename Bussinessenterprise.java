@@ -19,4 +19,24 @@ public abstract class Enterprise extends Organization{
     private long contact;
     private String email;
     private String zipcode;
-    
+    public enum EnterpriseType{
+        Hospital("Hospital"),
+        BoneMarrowBank("BoneMarrowBank"),
+        Legal("Legal"),
+        BloodCancerCentre("BloodCancerCentre"),
+        HRSA("Government");
+        
+        
+        private String value;
+        
+        private EnterpriseType(String value){
+            this.value=value;
+        }
+        public String getValue() {
+            return value;
+        }
+        @Override
+        public String toString(){
+        return value;
+    }
+    }
