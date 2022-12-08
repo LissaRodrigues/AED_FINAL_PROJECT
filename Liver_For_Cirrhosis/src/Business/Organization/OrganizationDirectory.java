@@ -9,5 +9,12 @@ package Business.Organization;
  * @author cheril
  */
 public class OrganizationDirectory {
-    
+     private ArrayList<Organization> organizationList;
+     
+      public OrganizationDirectory() {
+        organizationList = new ArrayList();
+    }
+
+    public ArrayList<Organization> getOrganizationList() {
+        return organizationList;
 }
