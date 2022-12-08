@@ -1,16 +1,18 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 package Business.Employee;
 
 import java.util.Date;
+
 /**
  *
  * @author cheril
  */
 public class Employee {
-    private String name;
+      private String name;
     private int id;
     private int contactNumber;
     private Date dateOfBirth;
@@ -97,5 +99,13 @@ public class Employee {
     }
 
     
-     
+    
+    
+    
+    @Override
+    public String toString() {
+        return name;
+    }
+    
+    
 }
