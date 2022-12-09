@@ -4,12 +4,16 @@
  */
 package Business.UserAccount;
 
+import Business.Employee.Employee;
+import Business.Role.Role;
+import java.util.ArrayList;
+
 /**
  *
  * @author cheril
  */
 public class UserAccountDirectory {
-     private ArrayList<UserAccount> userAccountList;
+       private ArrayList<UserAccount> userAccountList;
 
     public UserAccountDirectory() {
         userAccountList = new ArrayList();
@@ -27,4 +31,23 @@ public class UserAccountDirectory {
 //        System.out.println("No user account found. Returning Null");
         return null;
     }
+    
+    public UserAccount createUserAccount(String username, String password, Employee employee, Role role){
+        UserAccount userAccount = new UserAccount();
+        userAccount.setUsername(username);
+        userAccount.setPassword(password);
+        userAccount.setEmployee(employee);
+        userAccount.setRole(role);
+        userAccountList.add(userAccount);
+        return userAccount;
+    }
+    
+    public boolean checkIfUsernameIsUnique(String username){
+        for (UserAccount ua : userAccountList){
+            if (ua.getUsername().equals(username))
+                return false;
+        }
+        return true;
+    }
+    
 }

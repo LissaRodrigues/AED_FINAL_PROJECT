@@ -4,12 +4,16 @@
  */
 package Business.UserAccount;
 
+import Business.Employee.Employee;
+import Business.Role.Role;
+import Business.WorkQueue.WorkQueue;
+
 /**
  *
  * @author cheril
  */
 public class UserAccount {
-    private String username;
+     private String username;
     private String password;
     private Employee employee;
     private Role role;
@@ -64,4 +68,11 @@ public class UserAccount {
         this.name = name;
     }
 
+    
+    
+    @Override
+    public String toString() {
+        return username;
+    }
+    
 }
