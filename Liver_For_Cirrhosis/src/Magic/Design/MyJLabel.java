@@ -8,8 +8,8 @@ package Magic.Design;
  *
  * @author cheril
  */
-public class MyJLabel {
-       public MyJLabel() {
+public class MyJLabel extends javax.swing.JLabel {
+      public MyJLabel() {
         
         setMagicDesign();
     }
@@ -27,4 +27,5 @@ public class MyJLabel {
 
 
     }
+    
 }
