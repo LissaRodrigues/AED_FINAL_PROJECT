@@ -9,5 +9,8 @@ package Magic.Design;
  * @author cheril
  */
 public class MyJTextField {
-    
+   public MyJTextField() {
+//        this.setFont(new java.awt.Font("Arial", 1, 14));
+    }
+      
 }
