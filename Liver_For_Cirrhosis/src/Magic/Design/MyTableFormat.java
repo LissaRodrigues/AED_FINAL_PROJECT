@@ -4,6 +4,12 @@
  */
 package Magic.Design;
 
+import java.awt.Component;
+import javax.swing.BorderFactory;
+import javax.swing.JLabel;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableCellRenderer;
+import javax.swing.table.TableCellRenderer;
 /**
  *
  * @author cheril
