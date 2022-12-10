@@ -6,7 +6,7 @@ package UI.LiverBankCoordinatorRole;
 
 /**
  *
- * @author user
+ * @author cheril
  */
 public class LiverBankCoordinatorWorkAreaJPanel extends javax.swing.JPanel {
 
