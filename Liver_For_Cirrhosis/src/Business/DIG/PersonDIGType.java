@@ -80,7 +80,7 @@ public class PersonDIGType {
             System.out.println(e);
             this.hlaList.add(HLAType.valueOf(hlaList));
         }
-//        return this;
+//       
     }
     
     public void removeHLA(HLAType hlaType) {
