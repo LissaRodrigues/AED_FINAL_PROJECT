@@ -13,6 +13,16 @@ public class SystemCoordinatorWorkAreaJPanel extends javax.swing.JPanel {
     /**
      * Creates new form SystemCoordinatorWorkAreaJPanel
      */
+    
+    
+      private UserAccount userAccount;
+    boolean a=true;
+    private SystemCoordinatorOrganization systorganization;
+    private Enterprise enterprise;
+    private EcoSystem system;
+    private DonorDirectory donorDirectory;
+    private Network network;
+    private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
     public SystemCoordinatorWorkAreaJPanel() {
         initComponents();
     }
