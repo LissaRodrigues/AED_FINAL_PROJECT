@@ -5,11 +5,12 @@
 package Magic.Design;
 
 import java.awt.Color;
+
 /**
  *
  * @author cheril
  */
-public class MyJButton {
+public class MyJButton extends javax.swing.JButton {
     public MyJButton() {
         designMyButton();
     }
@@ -19,4 +20,5 @@ public class MyJButton {
         this.setForeground(new Color(0,0,0));
 
     }
+    
 }
